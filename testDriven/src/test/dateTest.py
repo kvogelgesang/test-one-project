@@ -3,6 +3,7 @@ Created on Mar 12, 2012
 
 @author: KVogelgesang
 '''
+# from mock import Mock # http://python-mock.sourceforge.net/
 import unittest
 import datetime
 import sys
