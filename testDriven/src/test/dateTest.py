@@ -19,4 +19,7 @@ class DateTests(unittest.TestCase):
     def testtimeformat(self):
         mydate = date.Date()
         self.assertEquals(mydate.formattimeonly("13:41:27.228651"), "13:41", "timeformat test failed!")
+
+if __name__ == '__main__':
+    unittest.main()
     
