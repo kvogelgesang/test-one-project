@@ -20,10 +20,24 @@
                 <executable>python</executable>
                 <workingDirectory>src/test</workingDirectory>
                 <arguments>
-                  <argument>dateTest.py</argument>
+                  <argument>date_tests.py</argument>
                 </arguments>
             </configuration>
-            <id>python-unittest</id>
+            <id>python-unittest-1</id>
+            <phase>test</phase>
+            <goals>
+                <goal>exec</goal>
+            </goals>
+        </execution>
+	<execution>
+	    <configuration>
+                <executable>python</executable>
+                <workingDirectory>src/test</workingDirectory>
+                <arguments>
+                  <argument>sqlite_mock_tests.py</argument>
+                </arguments>
+            </configuration>
+            <id>python-unittest-2</id>
             <phase>test</phase>
             <goals>
                 <goal>exec</goal>
