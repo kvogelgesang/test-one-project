@@ -27,8 +27,7 @@ class Date:
         firstarray = str(string).split('.',1)
         secondarray = firstarray[0].split(':',2)
         return "%s:%s" % (secondarray[0],secondarray[1])
-         
-        
+
 
 #if __name__ == '__main__':
     #mydate = Date()
