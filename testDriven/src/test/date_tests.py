@@ -8,6 +8,7 @@ import unittest
 import datetime
 import sys
 sys.path.append("../main")
+sys.path.append("src/main")
 import date
 
 class DateTests(unittest.TestCase):

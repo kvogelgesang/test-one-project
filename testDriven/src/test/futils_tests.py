@@ -4,6 +4,7 @@ import unittest
 import os
 import sys
 sys.path.append("../main")
+sys.path.append("src/main")
 import futils
 
 class FutilsTests(unittest.TestCase):
