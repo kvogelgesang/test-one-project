@@ -7,8 +7,8 @@ Created on Mar 12, 2012
 import unittest
 import datetime
 import sys
-sys.path.append("../main")
-sys.path.append("src/main")
+sys.path.append("../main/python")
+sys.path.append("src/main/python")
 import date
 
 class DateTests(unittest.TestCase):

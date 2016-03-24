@@ -1,8 +1,8 @@
 __author__ = 'kvogelgesang'
 
 import sys
-sys.path.append("../main")
-sys.path.append("src/main")
+sys.path.append("../main/python")
+sys.path.append("src/main/python")
 from mock import Mock, patch, MagicMock
 from configuration import SetEnv
 import unittest
