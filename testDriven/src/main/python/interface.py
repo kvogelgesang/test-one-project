@@ -3,6 +3,7 @@
 import abc
 #from abc import ABCMeta, abstractmethod, abstractproperty
 
+# Example abstract class
 class IStream(object):
     __metaclass__ = abc.ABCMeta
 
@@ -24,6 +25,21 @@ class SocketStream(IStream):
         my_data = super(SocketStream, self).write(data)
         print("Write socket stream with data: " + str(my_data))
 
-socket=SocketStream()
-socket.read(1)
-socket.write("Hello World!")
+# Example class method
+class Roboter:
+    counter = 0
+    def __init__(self):
+        type(self).counter += 1
+
+    @classmethod
+    def AnzahlRoboter(cls):
+        return cls, Roboter.counter
+
+if __name__ == "__main__":
+    print(Roboter.AnzahlRoboter())
+    x = Roboter()
+    print(Roboter.AnzahlRoboter())
+    print(x.AnzahlRoboter())
+    socket=SocketStream()
+    socket.read(1)
+    socket.write("Hello World!")
